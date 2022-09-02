@@ -1,0 +1,30 @@
+{
+  "name": "vite-template-solid",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "lint": "npx eslint . --ext .ts"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.7.14",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "autoprefixer": "^10.4.8",
+    "eslint": "^8.23.0",
+    "eslint-plugin-solid": "^0.7.1",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.8.2",
+    "vite": "^3.0.9",
+    "vite-plugin-solid": "^2.3.0"
+  },
+  "dependencies": {
+    "@solidjs/router": "^0.4.3",
+    "solid-js": "^1.5.1"
+  }
+}
