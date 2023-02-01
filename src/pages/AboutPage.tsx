@@ -1,5 +1,5 @@
 import { Component } from "solid-js"
-import { Counter } from "@/Components"
+import { Counter } from "@/components"
 
 const AboutPage: Component = () => {
   return (

@@ -1,14 +1,14 @@
 import { createStore, produce } from "solid-js/store"
 
 interface IUser {
-  email: string,
-  password: string,
+  email: string
+  password: string
 }
 
 interface IStore {
-  isLoggedIn: boolean,
-  user: IUser,
-  token: string,
+  isLoggedIn: boolean
+  user: IUser
+  token: string
 }
 
 const initStoreState: IStore = {
@@ -21,20 +21,18 @@ const initStoreState: IStore = {
 }
 
 const [store, setStore] = createStore<IStore>(
-  (localStorage.user_store)
+  localStorage.user_store
     ? JSON.parse(localStorage.user_store)
-    : initStoreState
+    : initStoreState,
 )
 
-function Login(data: { user: IUser, token: string }) {
+function Login(data: { user: IUser; token: string }) {
   setStore(
-    produce<IStore>(
-      store => {
-        store.user = data.user
-        store.token = data.token
-        store.isLoggedIn = true
-      }
-    )
+    produce<IStore>((store) => {
+      store.user = data.user
+      store.token = data.token
+      store.isLoggedIn = true
+    }),
   )
   localStorage.user_store = JSON.stringify(store)
 }

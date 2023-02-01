@@ -1,7 +1,7 @@
 import { Component, Show } from "solid-js"
 import { Navigate } from "@solidjs/router"
-import { LoginForm } from "@/Components"
-import { UserStore } from "@/Stores"
+import { LoginForm } from "@/components"
+import { UserStore } from "@/stores"
 
 const LoginPage: Component = () => {
   return (

@@ -1,8 +1,8 @@
 /* @refresh reload */
-import { render } from 'solid-js/web'
+import { render } from "solid-js/web"
 import { Router } from "@solidjs/router"
 
-import "./Assets/styles/index.css"
+import "./assets/styles/index.css"
 import App from "./App"
 
 render(
@@ -11,5 +11,5 @@ render(
       <App />
     </Router>
   ),
-  document.getElementById("root") as HTMLElement
+  document.getElementById("root") as HTMLElement,
 )

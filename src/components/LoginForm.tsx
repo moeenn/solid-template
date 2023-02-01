@@ -1,9 +1,9 @@
 import { Component, createSignal } from "solid-js"
-import { UserStore } from "@/Stores"
+import { UserStore } from "@/stores"
 
 interface IForm {
-  email: string,
-  password: string,
+  email: string
+  password: string
 }
 
 const LoginForm: Component = () => {
@@ -23,7 +23,6 @@ const LoginForm: Component = () => {
       class="w-96 mx-auto bg-gray-50 drop-shadow-md rounded p-4"
       onSubmit={handleSubmit}
     >
-      
       <h1 class="text-2xl text-gray-800 py-3">Login</h1>
 
       <fieldset class="py-5">

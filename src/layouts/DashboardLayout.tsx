@@ -1,5 +1,5 @@
 import { Component, ParentProps } from "solid-js"
-import { DashboardSidebar } from "@/Components"
+import { DashboardSidebar } from "@/components"
 
 const DashboardLayout: Component<ParentProps> = ({ children }) => {
   return (
@@ -8,9 +8,7 @@ const DashboardLayout: Component<ParentProps> = ({ children }) => {
         <DashboardSidebar />
       </div>
 
-      <div class="col-span-4 row-span-2 px-10 py-4">
-        {children}
-      </div>
+      <div class="col-span-4 row-span-2 px-10 py-4">{children}</div>
     </div>
   )
 }
