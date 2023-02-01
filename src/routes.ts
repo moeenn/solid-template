@@ -1,19 +1,17 @@
-import { Component, ParentProps } from "solid-js"
+import { Component, ParentProps, lazy } from "solid-js"
 import { BaseLayout, DashboardLayout } from "@/layouts"
 
-import {
-  HomePage,
-  AboutPage,
-  LoginPage,
-  DashboardUsersPage,
-  DashboardTestPage,
-} from "@/pages"
+const HomePage = lazy(() => import("@/pages/HomePage"))
+const AboutPage = lazy(() => import("@/pages/AboutPage"))
+const LoginPage = lazy(() => import("@/pages/LoginPage"))
+const DashboardUsersPage = lazy(() => import("@/pages/Dashboard/UsersPage"))
+const DashboardTestPage = lazy(() => import("@/pages/Dashboard/TestPage"))
 
 export interface IRoute {
   path: string
   page: Component<{}>
   layout: Component<ParentProps>
-  auth_required: boolean
+  auth: boolean
 }
 
 const routes: IRoute[] = [
@@ -21,31 +19,31 @@ const routes: IRoute[] = [
     path: "/",
     page: HomePage,
     layout: BaseLayout,
-    auth_required: false,
+    auth: false,
   },
   {
     path: "/about",
     page: AboutPage,
     layout: BaseLayout,
-    auth_required: false,
+    auth: false,
   },
   {
     path: "/login",
     page: LoginPage,
     layout: BaseLayout,
-    auth_required: false,
+    auth: false,
   },
   {
     path: "/dashboard/users",
     page: DashboardUsersPage,
     layout: DashboardLayout,
-    auth_required: true,
+    auth: true,
   },
   {
     path: "/dashboard/test",
     page: DashboardTestPage,
     layout: DashboardLayout,
-    auth_required: true,
+    auth: true,
   },
 ]
 

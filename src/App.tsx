@@ -13,7 +13,7 @@ const App: Component = () => {
             path={route.path}
             component={() => (
               <route.layout>
-                <Show when={route.auth_required && !UserStore.store.isLoggedIn}>
+                <Show when={route.auth && !UserStore.store.isLoggedIn}>
                   <Navigate href="/login" />
                 </Show>
 
