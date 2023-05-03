@@ -1,9 +1,9 @@
-import { Component, Show } from "solid-js"
+import { Show } from "solid-js"
 import { Navigate } from "@solidjs/router"
 import { LoginForm } from "@/components"
 import { UserStore } from "@/stores"
 
-const LoginPage: Component = () => {
+export default function LoginPage() {
   return (
     <div>
       <Show when={UserStore.store.isLoggedIn}>
@@ -16,5 +16,3 @@ const LoginPage: Component = () => {
     </div>
   )
 }
-
-export default LoginPage

@@ -1,7 +1,6 @@
-import { Component } from "solid-js"
 import { Counter } from "@/components"
 
-const AboutPage: Component = () => {
+export default function AboutPage() {
   return (
     <div class="mt-6">
       <h1 class="text-2xl text-gray-800 py-3">About Page</h1>
@@ -9,5 +8,3 @@ const AboutPage: Component = () => {
     </div>
   )
 }
-
-export default AboutPage

@@ -6,7 +6,7 @@ interface IForm {
   password: string
 }
 
-const LoginForm: Component = () => {
+export const LoginForm: Component = () => {
   const initForm = { email: "", password: "" }
   const [form, setForm] = createSignal<IForm>(initForm)
 
@@ -31,6 +31,7 @@ const LoginForm: Component = () => {
           class="bg-gray-200 active:bg-gray-300 px-3 py-2 rounded w-full"
           type="email"
           onChange={(e) => setEmail(e.currentTarget.value)}
+          required
         />
       </fieldset>
 
@@ -40,6 +41,8 @@ const LoginForm: Component = () => {
           class="bg-gray-200 active:bg-gray-300 px-3 py-2 rounded w-full"
           type="password"
           onChange={(e) => setPassword(e.currentTarget.value)}
+          required
+          minLength={8}
         />
       </fieldset>
 
@@ -51,5 +54,3 @@ const LoginForm: Component = () => {
     </form>
   )
 }
-
-export default LoginForm

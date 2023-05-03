@@ -6,7 +6,7 @@ const links = [
   { href: "/dashboard/test", text: "Test" },
 ]
 
-const DashboardSidebar: Component = () => {
+export const DashboardSidebar: Component = () => {
   const location = useLocation()
 
   return (
@@ -31,5 +31,3 @@ const DashboardSidebar: Component = () => {
     </div>
   )
 }
-
-export default DashboardSidebar

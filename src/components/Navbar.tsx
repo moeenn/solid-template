@@ -3,7 +3,7 @@ import { Container } from "@/components"
 import { Link } from "@solidjs/router"
 import { UserStore } from "@/stores"
 
-const Navbar: Component = () => {
+export const Navbar: Component = () => {
   return (
     <div class="bg-blue-600 drop-shadow-lg">
       <Container>
@@ -53,5 +53,3 @@ const Navbar: Component = () => {
     </div>
   )
 }
-
-export default Navbar

@@ -1,7 +1,7 @@
 import { Component, ParentProps } from "solid-js"
-import { DashboardSidebar } from "@/components"
+import { DashboardSidebar } from "@/components/dashboard"
 
-const DashboardLayout: Component<ParentProps> = ({ children }) => {
+export const DashboardLayout: Component<ParentProps> = ({ children }) => {
   return (
     <div class="grid grid-cols-5 grid-rows-2 h-screen w-screen m-0">
       <div class="row-span-2 bg-gray-50">
@@ -12,5 +12,3 @@ const DashboardLayout: Component<ParentProps> = ({ children }) => {
     </div>
   )
 }
-
-export default DashboardLayout

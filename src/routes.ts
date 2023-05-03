@@ -14,7 +14,7 @@ export interface IRoute {
   auth: boolean
 }
 
-const routes: IRoute[] = [
+export const routes: IRoute[] = [
   {
     path: "/",
     page: HomePage,
@@ -46,5 +46,3 @@ const routes: IRoute[] = [
     auth: true,
   },
 ]
-
-export default routes

@@ -1,2 +1,2 @@
-export { default as BaseLayout } from "./BaseLayout"
-export { default as DashboardLayout } from "./DashboardLayout"
+export { BaseLayout } from "./BaseLayout"
+export { DashboardLayout } from "./DashboardLayout"

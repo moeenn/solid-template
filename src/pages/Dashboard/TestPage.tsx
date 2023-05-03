@@ -1,7 +1,6 @@
-import { Component } from "solid-js"
 import cover from "@/assets/images/cover.jpg"
 
-const TestPage: Component = () => {
+export default function TestPage() {
   return (
     <div>
       <h1 class="text-2xl pb-5">Content of the test page</h1>
@@ -22,5 +21,3 @@ const TestPage: Component = () => {
     </div>
   )
 }
-
-export default TestPage

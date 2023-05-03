@@ -1,7 +1,7 @@
-import { Component, Show } from "solid-js"
+import { Show } from "solid-js"
 import { UserStore } from "@/stores"
 
-const HomePage: Component = () => {
+export default function HomePage() {
   return (
     <div>
       <div class="mt-6">
@@ -23,5 +23,3 @@ const HomePage: Component = () => {
     </div>
   )
 }
-
-export default HomePage

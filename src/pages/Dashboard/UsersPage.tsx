@@ -1,6 +1,4 @@
-import { Component } from "solid-js"
-
-const UsersPage: Component = () => {
+export default function UsersPage() {
   return (
     <div>
       <h1 class="text-2xl pb-5">Content of the users page</h1>
@@ -13,5 +11,3 @@ const UsersPage: Component = () => {
     </div>
   )
 }
-
-export default UsersPage

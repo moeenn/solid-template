@@ -1,7 +1,7 @@
 import { Component, ParentProps } from "solid-js"
 import { Container, Navbar } from "@/components"
 
-const BaseLayout: Component<ParentProps> = ({ children }) => {
+export const BaseLayout: Component<ParentProps> = ({ children }) => {
   return (
     <>
       <Navbar />
@@ -9,5 +9,3 @@ const BaseLayout: Component<ParentProps> = ({ children }) => {
     </>
   )
 }
-
-export default BaseLayout
